@@ -8,11 +8,10 @@ namespace Xadrez
         static void Main(string[] args)
         {
 
-            Tabuleiro P;
+            Tabuleiro tab = new Tabuleiro(8, 8);
+            Tela.imprimirTabuleiro(tab);
 
-            P = new Tabuleiro(3, 4);
-
-            Console.WriteLine(P);
+            Console.WriteLine(tab);
             Console.ReadLine();
         }
     }
