@@ -14,8 +14,6 @@ namespace Xadrez
                 PartidaDeXadrez partida = new PartidaDeXadrez();
              
 
-                Tela.imprimirTabuleiro(partida.tab);
-
                 while (!partida.terminada)
                 {
                     Console.Clear();
@@ -23,6 +21,13 @@ namespace Xadrez
 
                     Console.Write("\nOrigem: ");
                     Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+                    
+
+                    bool[,] possicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
+
+                    Console.Clear();
+                    Tela.imprimirTabuleiro(partida.tab, possicoesPossiveis);
+
                     Console.Write("Destino: ");
                     Posicao desitno = Tela.lerPosicaoXadrez().toPosicao();
 
