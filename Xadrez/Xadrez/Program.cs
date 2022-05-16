@@ -18,8 +18,6 @@ namespace Xadrez
                 {
                     try
                     {
-
-
                         Console.Clear();
                         Tela.imprimirPartida(partida);
 
@@ -40,9 +38,9 @@ namespace Xadrez
                         partida.realizaJogada(origem, desitno);
                         
                     }
-                    catch (TabuleiroExeption ex)
+                    catch (TabuleiroExeption e)
                     {
-                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
                 }

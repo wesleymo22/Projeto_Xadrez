@@ -1,6 +1,4 @@
-﻿
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     class Tabuleiro
     {
@@ -12,7 +10,7 @@ namespace tabuleiro
         {
             this.linhas = linhas;
             this.colunas = colunas;
-            pecas = new Peca[linhas,colunas];
+            pecas = new Peca[linhas, colunas];
         }
 
         public Peca peca(int linha, int coluna)
@@ -51,11 +49,11 @@ namespace tabuleiro
             {
                 Peca aux = peca(pos);
                 aux.posicao = null;
-                pecas[pos.linha,pos.coluna] = null;
+                pecas[pos.linha, pos.coluna] = null;
                 return aux;
             }
         }
-        
+
 
 
         public bool posicaoValida(Posicao pos)
@@ -65,7 +63,7 @@ namespace tabuleiro
                 return false;
             }
             return true;
-            
+
         }
 
         public void validarPosicao(Posicao pos)
