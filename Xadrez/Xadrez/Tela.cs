@@ -18,12 +18,12 @@ namespace Xadrez
             {
                 if (partida.xeque)
                 {
-                    Console.WriteLine("XEQUE!");
+                    Console.WriteLine("\nXEQUE!");
                 }
             }
             else
             {
-                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("\nXEQUEMATE!");
                 Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }

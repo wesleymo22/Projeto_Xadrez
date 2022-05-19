@@ -31,7 +31,7 @@ namespace Xadrez
                         Console.Clear();
                         Tela.imprimirTabuleiro(partida.tab, possicoesPossiveis);
 
-                        Console.Write("Destino: ");
+                        Console.Write("\nDestino: ");
                         Posicao desitno = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeDestino(origem, desitno);
 
